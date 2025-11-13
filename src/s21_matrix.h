@@ -1,5 +1,9 @@
 #include <stdlib.h>
 
+#define WRONG_MATRIX 1
+#define CALC_ERROR 2
+#define OK 0
+
 typedef struct matrix_struct {
     double** matrix;
     int rows;
