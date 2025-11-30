@@ -31,7 +31,7 @@ int s21_determinant(matrix_t *A, double *result) {
           s21_get_minor_matrix(A, &minor, j);
           double minor_det = 0.0;
           s21_determinant(&minor, &minor_det);
-          int sign = ((j + 1) % 2 == 0) ? -1 : 1;
+          int sign = (j % 2 == 0) ? 1 : -1;
           det += sign * A->matrix[0][j] * minor_det;
           s21_remove_matrix(&minor);
         }
