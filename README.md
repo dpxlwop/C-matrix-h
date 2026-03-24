@@ -1,2 +1,2 @@
 # C-matrix-h
-Implementing string.h library &amp; sprintf using C language
+Implementing matrix.h library using C language
